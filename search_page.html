@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Profile Search</title>
+    <link rel="stylesheet" href="./search_page.css">
+</head>
+
+<body>
+    <header>
+        <h1>GitFetch- Profile Finder for Github</h1>
+        <h3>Check out the repos,followers and more,<br> just by entering a username!</h3>
+
+    </header>
+    <section>
+        <form id="my-form" autocomplete="off">
+            <div class="form-group">
+                <input type="text" id="search" placeholder="Enter a username..." required>
+
+            </div>
+            <div>
+                <button class="search-button">SEARCH</button>
+            </div>
+        </form>
+
+        <div id="result"></div>
+
+    </section>
+
+</body>
+<script src="./search_page.js"></script>
+
+</html>
