@@ -1,5 +1,8 @@
 let form = document.getElementById("my-form")
 
+let button = document.querySelector(".search-button")
+
+
 form.addEventListener('submit', function (e) {
     e.preventDefault()
 
@@ -12,10 +15,22 @@ form.addEventListener('submit', function (e) {
         .then((data) => {
             console.log(data)
 
-            document.getElementById("result").innerHTML = ` <a target="_blank" href="https://www.github.com/${originalName}"></a>`
+            button.addEventListener('click', () => {
+                openInNewTab("profile_page.html")
+            })
+
+
+
+
+
+
+
+
+
         })
 
 
 
 
 })
+
