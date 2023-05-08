@@ -12,7 +12,7 @@ form.addEventListener('submit', function (e) {
         .then((data) => {
             console.log(data)
 
-            document.getElementById("result").innerHTML = `<img src="${data.avatar_url}"/>`
+            document.getElementById("result").innerHTML = ` <a target="_blank" href="https://www.github.com/${originalName}"></a>`
         })
 
 
